@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj": {}
+    "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
+    "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj": {
+    "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj",
+        "projectPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj"
+              "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj"
               }
             }
           }

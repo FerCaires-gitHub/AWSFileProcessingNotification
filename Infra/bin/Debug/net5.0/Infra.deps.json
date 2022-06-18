@@ -64,6 +64,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.50"
+        },
         "runtime": {
           "Domain.dll": {}
         }

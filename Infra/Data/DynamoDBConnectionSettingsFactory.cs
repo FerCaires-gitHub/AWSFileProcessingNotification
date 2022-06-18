@@ -19,6 +19,9 @@ namespace AWSFileProcessingNotification.Infra.Data
             var config = new AmazonDynamoDBConfig();
             config.ServiceURL = _options.Value.DynamoURL;
             return config;
+
+
+            
         }
     }
 }
