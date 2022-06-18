@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "yT3qJd+GzjW853ijK9r3y/8zS7CPgoyagU8I0Pi7pk3m95oTfAQkpf2eGq0oC59cDx3p66mXdSMiMjKQERu+Cg==",
+  "dgSpecHash": "fUgEwjyMPQe2Y+dk+fOpDwuhU9ao6IC2R/SwiDG/VI0nkBMt6x0Y9Y2HF2LR4KnSqHt3Y0UmgpcI4SZgrWrAaQ==",
   "success": true,
   "projectFilePath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Infra\\Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ferna\\.nuget\\packages\\awssdk.core\\3.7.12.2\\awssdk.core.3.7.12.2.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.50\\awssdk.dynamodbv2.3.7.3.50.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

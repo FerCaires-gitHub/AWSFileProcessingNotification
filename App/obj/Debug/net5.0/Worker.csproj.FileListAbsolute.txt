@@ -49,3 +49,4 @@ C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\App\obj\Debug\net5
 C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\App\obj\Debug\net5.0\ref\Worker.dll
 C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\App\obj\Debug\net5.0\Worker.pdb
 C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\App\obj\Debug\net5.0\Worker.genruntimeconfig.cache
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\App\bin\Debug\net5.0\AWSSDK.DynamoDBv2.dll

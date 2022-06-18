@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fz04Yj/qNscks+YbPvUqWl7cEqMGiUZbbU/moCcqR3301bfNLW0ss+sLU0sbCzW44Jv5rjB0lxxCu9Rp8WUQRQ==",
+  "dgSpecHash": "bSLIRPUbKM2JfGwM99vtqyuJe33t2Ab/+D4NUIbVCvLgxaY+aOAvdbEJgJ4VSwLpruN8zJjV6s1HJvvGGU/IXg==",
   "success": true,
   "projectFilePath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ferna\\.nuget\\packages\\awssdk.core\\3.7.12.2\\awssdk.core.3.7.12.2.nupkg.sha512",
+    "C:\\Users\\ferna\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.50\\awssdk.dynamodbv2.3.7.3.50.nupkg.sha512"
+  ],
   "logs": []
 }

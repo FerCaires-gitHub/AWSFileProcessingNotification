@@ -1,0 +1,15 @@
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.csproj.AssemblyReference.cache
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.AssemblyInfoInputs.cache
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.AssemblyInfo.cs
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\Infra.deps.json
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\Infra.dll
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\ref\Infra.dll
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\Infra.pdb
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\Domain.dll
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\bin\Debug\net5.0\Domain.pdb
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.csproj.CopyComplete
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.dll
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\ref\Infra.dll
+C:\Users\ferna\source\aws_repos\AWSFileProcessingNotification\Infra\obj\Debug\net5.0\Infra.pdb

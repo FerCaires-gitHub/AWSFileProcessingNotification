@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Worker/1.0.0": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.50",
           "AWSSDK.Extensions.NETCore.Setup": "3.7.2",
           "AWSSDK.S3": "3.7.9.18",
           "AWSSDK.SQS": "3.7.2.71",
@@ -23,6 +24,17 @@
           "lib/netcoreapp3.1/AWSSDK.Core.dll": {
             "assemblyVersion": "3.3.0.0",
             "fileVersion": "3.7.12.2"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.3.50": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.12.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.3.50"
           }
         }
       },
@@ -453,6 +465,13 @@
       "sha512": "sha512-P0VKY4Y3/UWaj7Spn/q/A2utEu5NMuJ7tHWLAB7rcTubsPR7LCuIzBlIypSUgDyS4OWnFxwB1hBHF2iklAR0KA==",
       "path": "awssdk.core/3.7.12.2",
       "hashPath": "awssdk.core.3.7.12.2.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.7.3.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qChSiq7KJnDOc5b8LnF5PXsQII1/F0SGzQVrZyNZMXtCWPKQh1Qbzr3P4YMFvs8vYd81txmFqGbMw74QLYOZew==",
+      "path": "awssdk.dynamodbv2/3.7.3.50",
+      "hashPath": "awssdk.dynamodbv2.3.7.3.50.nupkg.sha512"
     },
     "AWSSDK.Extensions.NETCore.Setup/3.7.2": {
       "type": "package",
