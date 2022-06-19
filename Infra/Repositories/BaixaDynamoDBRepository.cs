@@ -6,6 +6,7 @@ using AWSFileProcessingNotification.Domain.Interfaces.Repositories;
 using AWSFileProcessingNotification.Domain.Models;
 using System;
 using Amazon.DynamoDBv2.DocumentModel;
+using System.Text.Json;
 
 namespace AWSFileProcessingNotification.Infra.Repositories
 {
@@ -19,9 +20,20 @@ namespace AWSFileProcessingNotification.Infra.Repositories
         {
             _factory = factory;
         }
-        public Task<Baixa> Get(string id)
+        public async Task<Baixa> Get(string id)
         {
-            throw new System.NotImplementedException();
+            var client  = _factory.GetClient();
+            Table table = Table.LoadTable(client,TABLE_NAME);
+            var item  = await table.GetItemAsync(id);
+            var response  = GetObject<Baixa>(item);
+            return response;
+        }
+
+        private T GetObject<T>(Document document) where T: class, new()
+        {
+            var response  = JsonSerializer.Deserialize<T>(document.ToJson());
+            return response;
+            
         }
 
         public Task<IEnumerable<Baixa>> GetAll()
@@ -29,14 +41,23 @@ namespace AWSFileProcessingNotification.Infra.Repositories
             throw new System.NotImplementedException();
         }
 
-        public Task Insert(Baixa source)
+        public async Task Insert(Baixa source)
         {
             var client  = _factory.GetClient();
             Table table = Table.LoadTable(client,TABLE_NAME);
-            var dictionary  = new Dictionary<string,DynamoDBEntry>();
-            var document = new Document();
+            var document = CreateDocument(source);
+            await table.PutItemAsync(document);
+        }
 
-            return Task.CompletedTask;
+        private Document CreateDocument(object obj)
+        {
+            var document = new Document();
+            foreach (var item in obj.GetType().GetProperties())
+            {
+                document[item.Name] = item.GetValue(obj).ToString();
+            }
+            return document;
+
         }
     }
 }
