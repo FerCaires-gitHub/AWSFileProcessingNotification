@@ -7,6 +7,5 @@ namespace AWSFileProcessingNotification.Domain.Interfaces.Repositories
     {
         Task Insert(T source);
         Task<T> Get(string id);
-        Task<IEnumerable<T>> GetAll();
     }
 }

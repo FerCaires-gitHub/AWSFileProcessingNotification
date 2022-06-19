@@ -36,11 +36,6 @@ namespace AWSFileProcessingNotification.Infra.Repositories
             
         }
 
-        public Task<IEnumerable<Baixa>> GetAll()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public async Task Insert(Baixa source)
         {
             var client  = _factory.GetClient();

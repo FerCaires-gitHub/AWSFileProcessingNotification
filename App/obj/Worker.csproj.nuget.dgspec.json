@@ -1,17 +1,113 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj": {}
+    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj": {
+    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
+        "projectUniqueName": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
         "projectName": "Worker",
-        "projectPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
+        "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\obj\\",
+        "outputPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.3.50, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.7.2, )"
+            },
+            "AWSSDK.Lambda": {
+              "target": "Package",
+              "version": "[3.7.13.16, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.9.18, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.2.71, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.3.74, )"
+            },
+            "Amazon.Lambda.S3Events": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -47,26 +143,6 @@
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
               "version": "[3.7.3.50, )"
-            },
-            "AWSSDK.Extensions.NETCore.Setup": {
-              "target": "Package",
-              "version": "[3.7.2, )"
-            },
-            "AWSSDK.S3": {
-              "target": "Package",
-              "version": "[3.7.9.18, )"
-            },
-            "AWSSDK.SQS": {
-              "target": "Package",
-              "version": "[3.7.2.71, )"
-            },
-            "AWSSDK.SimpleNotificationService": {
-              "target": "Package",
-              "version": "[3.7.3.74, )"
-            },
-            "Microsoft.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             }
           },
           "imports": [

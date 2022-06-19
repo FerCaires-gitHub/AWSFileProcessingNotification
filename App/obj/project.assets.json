@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Amazon.Lambda.S3Events/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.S3": "3.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Amazon.Lambda.S3Events.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Amazon.Lambda.S3Events.dll": {}
+        }
+      },
       "AWSSDK.Core/3.7.12.2": {
         "type": "package",
         "compile": {
@@ -36,6 +48,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.Lambda/3.7.13.16": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.12.2, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Lambda.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Lambda.dll": {}
         }
       },
       "AWSSDK.S3/3.7.9.18": {
@@ -519,10 +543,38 @@
             "rid": "win"
           }
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.3.50"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Amazon.Lambda.S3Events/2.0.1": {
+      "sha512": "PGEMrodAzXzfrQI0AAUP7Wckmh3AvdOsuNQVF0kVYAX1b3jI0YkAcIkixCzkheDHRf1SUF3ROFilYv+JO2SDhg==",
+      "type": "package",
+      "path": "amazon.lambda.s3events/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "amazon.lambda.s3events.2.0.1.nupkg.sha512",
+        "amazon.lambda.s3events.nuspec",
+        "lib/netcoreapp3.1/Amazon.Lambda.S3Events.dll",
+        "lib/netcoreapp3.1/Amazon.Lambda.S3Events.xml",
+        "lib/netstandard2.0/Amazon.Lambda.S3Events.dll",
+        "lib/netstandard2.0/Amazon.Lambda.S3Events.xml"
+      ]
+    },
     "AWSSDK.Core/3.7.12.2": {
       "sha512": "P0VKY4Y3/UWaj7Spn/q/A2utEu5NMuJ7tHWLAB7rcTubsPR7LCuIzBlIypSUgDyS4OWnFxwB1hBHF2iklAR0KA==",
       "type": "package",
@@ -586,6 +638,33 @@
         "awssdk.extensions.netcore.setup.nuspec",
         "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll",
         "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
+      ]
+    },
+    "AWSSDK.Lambda/3.7.13.16": {
+      "sha512": "ZP2y7rPeTK+uGKNNaW7TlYNACRvvO5i10caQESXCc/PFYim6PZBQ1UbjjufaoN4H8WNWIeVkh34JLmdtb87/ag==",
+      "type": "package",
+      "path": "awssdk.lambda/3.7.13.16",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.Lambda.CodeAnalysis.dll",
+        "awssdk.lambda.3.7.13.16.nupkg.sha512",
+        "awssdk.lambda.nuspec",
+        "lib/net35/AWSSDK.Lambda.dll",
+        "lib/net35/AWSSDK.Lambda.pdb",
+        "lib/net35/AWSSDK.Lambda.xml",
+        "lib/net45/AWSSDK.Lambda.dll",
+        "lib/net45/AWSSDK.Lambda.pdb",
+        "lib/net45/AWSSDK.Lambda.xml",
+        "lib/netcoreapp3.1/AWSSDK.Lambda.dll",
+        "lib/netcoreapp3.1/AWSSDK.Lambda.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Lambda.xml",
+        "lib/netstandard2.0/AWSSDK.Lambda.dll",
+        "lib/netstandard2.0/AWSSDK.Lambda.pdb",
+        "lib/netstandard2.0/AWSSDK.Lambda.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
       ]
     },
     "AWSSDK.S3/3.7.9.18": {
@@ -1380,15 +1459,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AWSSDK.DynamoDBv2 >= 3.7.3.50",
       "AWSSDK.Extensions.NETCore.Setup >= 3.7.2",
+      "AWSSDK.Lambda >= 3.7.13.16",
       "AWSSDK.S3 >= 3.7.9.18",
       "AWSSDK.SQS >= 3.7.2.71",
       "AWSSDK.SimpleNotificationService >= 3.7.3.74",
+      "Amazon.Lambda.S3Events >= 2.0.1",
+      "Domain >= 1.0.0",
       "Microsoft.Extensions.Hosting >= 5.0.0"
     ]
   },
@@ -1399,11 +1486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
+      "projectUniqueName": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
       "projectName": "Worker",
-      "projectPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
+      "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\Worker.csproj",
       "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\obj\\",
+      "outputPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -1423,7 +1510,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\ferna\\source\\aws_repos\\AWSFileProcessingNotification\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1444,6 +1535,10 @@
             "target": "Package",
             "version": "[3.7.2, )"
           },
+          "AWSSDK.Lambda": {
+            "target": "Package",
+            "version": "[3.7.13.16, )"
+          },
           "AWSSDK.S3": {
             "target": "Package",
             "version": "[3.7.9.18, )"
@@ -1455,6 +1550,10 @@
           "AWSSDK.SimpleNotificationService": {
             "target": "Package",
             "version": "[3.7.3.74, )"
+          },
+          "Amazon.Lambda.S3Events": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           },
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
