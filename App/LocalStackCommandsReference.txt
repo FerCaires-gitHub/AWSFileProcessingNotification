@@ -1,0 +1,46 @@
+https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/
+
+https://gusiol.medium.com/desenvolvimento-na-aws-s3-e-sqs-sem-custos-com-localstack-f525d015ca48
+
+Criação de uma fila SQS
+aws --endpoint-url=http://127.0.0.1:4576 sqs create-queue --queue-name myqueue
+
+
+recupera o arn da fila SQS
+aws --endpoint-url=http://127.0.0.1:4576 sqs get-queue-attributes --queue-url http://localhost:4576/queue/myqueue --attribute-names All
+
+Listar mensagens recebidas no SQS
+aws --endpoint-url=http://127.0.0.1:4576 sqs receive-message --queue-url http://localhost:4576/queue/myqueue --attribute-names All --message-attribute-names All
+
+
+Criação de um bucket
+aws --endpoint-url=http://localhost:4572 s3 mb s3://mytestbucket
+
+Listar buckets
+aws --endpoint-url=http://localhost:4572 s3 ls
+
+Copiar arquivo no bucket
+aws --endpoint-url=http://localhost:4572 s3 cp /tmp/mongo.log s3://mytestbucket
+
+Deletar arquivo do bucket
+aws --endpoint-url=http://localhost:4572 s3 rm s3://mytestbucket/mongo.log
+
+Adição de regra de controle de acesso no bucket
+aws --endpoint-url=http://127.0.0.1:4572 s3api put-bucket-acl --bucket mybucket --acl public-read
+
+Configuração de notificação do bucket
+aws --endpoint-url=http://127.0.0.1:4572 s3api put-bucket-notification-configuration --bucket mybucket --notification-configuration file://notification.json
+
+Json para postar msg no sqs quando um objeto for criado no bucket
+{
+  "QueueConfigurations": [
+    {
+      "QueueArn": "arn:aws:sqs:us-east-1:000000000000:myqueue",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ]
+    }
+  ]
+}
+
+Configuração de eventos S3 para SQS, SNS ou Lambda
